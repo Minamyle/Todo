@@ -13,8 +13,39 @@
   background-image: url('./assets/todo2.jpg');
  
   background-color: rgb(155, 146, 146, 0.5); 
+  
+  background-Size: cover;
+   background-Position: center;
+    min-Height: 100vh
+    
 
 }
 .App{
   background-color: rgb(155, 146, 146, 0.5);
+  background-Size: cover;
+}
+
+/* CSS for non-mobile devices (default styles) */
+
+/* Your existing CSS styles for larger screens can go here */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 1023px) {
+  /* CSS specific to mobile devices */
+
+  /* Example styles for mobile view */
+  .container {
+    /* Adjustments for mobile view */
+    /* For instance, you can set width to 100% and remove margin */
+    width: 100%;
+    margin: 0px;
+  }
+
+  /* Additional mobile-specific styles can be added here */
+  .App{
+    background-color: none;
+    margin-left: 0px;
+    width: 100%;
+    
+  }
 }
