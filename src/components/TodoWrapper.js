@@ -15,7 +15,7 @@ export const TodoWrapper = () => {
   const addTodo = (todo) => {
     setTodos([
       ...todos,
-      { id: generateId(), task: todo, completed: false, isEditing: false },
+      { id: generateId, task: todo, completed: false, isEditing: false },
     ]);
   };
 

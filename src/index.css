@@ -1,28 +1,24 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
 
-
-.font-sans{
-  font-family: 'DM Sans', sans-serif;
+.font-sans {
+  font-family: "DM Sans", sans-serif;
 }
-.container{
-  
+.container {
   height: 100vh;
-  background-image: url('./assets/todo2.jpg');
- 
-  background-color: rgb(155, 146, 146, 0.5); 
-  
-  background-Size: cover;
-   background-Position: center;
-    min-Height: 100vh
-    
+  background-image: url("./assets/todo2.jpg");
 
-}
-.App{
   background-color: rgb(155, 146, 146, 0.5);
-  background-Size: cover;
+
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.App {
+  background-color: rgb(155, 146, 146, 0.5);
+  background-size: cover;
 }
 
 /* CSS for non-mobile devices (default styles) */
@@ -42,10 +38,9 @@
   }
 
   /* Additional mobile-specific styles can be added here */
-  .App{
+  .App {
     background-color: none;
     margin-left: 0px;
     width: 100%;
-    
   }
 }
