@@ -2,21 +2,19 @@ import React, { useState } from "react";
 import { TodoForm } from "./TodoForm";
 import { Todo } from "./Todo";
 import { EditTodoForm } from "./EditTodoForm";
+import { v4 as uuidv4 } from "uuid"; // Import v4 method from uuid
 
 export const TodoWrapper = () => {
   const [todos, setTodos] = useState([]);
-  const [idCounter, setIdCounter] = useState(0);
-
-  const generateId = () => {
-    setIdCounter((prevId) => prevId + 1);
-    return idCounter;
-  };
 
   const addTodo = (todo) => {
-    setTodos([
-      ...todos,
-      { id: generateId, task: todo, completed: false, isEditing: false },
-    ]);
+    const newTodo = {
+      id: uuidv4(), // Generate unique ID using uuidv4()
+      task: todo,
+      completed: false,
+      isEditing: false,
+    };
+    setTodos([...todos, newTodo]);
   };
 
   const toggleComplete = (id) => {
